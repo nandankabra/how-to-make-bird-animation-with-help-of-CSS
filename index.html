@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>how to make bird animation with help of CSS </title>
+        <style>
+            
+            .b1{
+                height: 190px;
+                width: 130px;
+                background-image: url("img/1.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: bird1 1s steps(9) infinite;
+                
+                
+            }
+            @keyframes bird1 {
+                0%{
+                    background-position: 0px 0px; 
+                }
+                100%{
+                    background-position: -1232px 0px;
+                }
+                
+            }
+            .p1{
+                animation-name: b2;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                position: relative;
+            }
+            @keyframes b2 {
+                0%{
+                    left: 0%;
+                }
+                100%{
+                    left: 100%;
+                }
+            }
+            .b2{
+                width: 142px;
+                height: 150px;  
+                background-image: url("img/2.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation-name: pp2;
+                animation-duration: 0.3s;
+                animation-iteration-count: infinite;
+                animation-timing-function: steps(3);
+                transform: rotateZ(45deg);  
+                
+            }
+            @keyframes pp2 {
+                0%{
+                    background-position: 0px 0px ; 
+                }
+                100%{
+                    background-position: -452px 0px ; 
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="p1">
+            <div class="b1"></div>
+            <div class="b2"></div>
+        </div>
+    </body>
+</html>
